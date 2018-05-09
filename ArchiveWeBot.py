@@ -15,7 +15,7 @@ class MyWXBot(WXBot):
 def main():
     bot = MyWXBot()
     bot.DEBUG = True
-    bot.conf['qr'] = 'png'
+    bot.conf['tty'] = 'png' # 非 Linux 服务器环境请将 tty 改为 qr
     bot.run()
 
 
